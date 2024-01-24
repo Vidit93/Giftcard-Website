@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top-view">
+            <div class="top-left">
+                <div class="gift-icon-view"><img class="gift-icon-img" src="/icons/gifticon.png" alt="Gift Icon"></div>
+                <div class="icon-text-view"><span class="icon-text">GIFTCARD</span></div>
+            </div>
+            <div class="top-middle-view">
+                <div class="search-view"><input type="text" class="search-bar" name="q" placeholder="Type your search..."></div>
+                <div class="search-icon-view"><img class="search-icon-img" src="/icons/searchicon.png" alt="Search Icon"></div>
+            </div>
+           <div class="top-right">
+            <div class="user-icon-view"><img class="user-icon-img" src="./icons/usericon.png" alt="User Icon"></div>
+            <div class="login-text-view"><span class="login-text">Login</span></div>
+            <div class="vertical-bar">|</div>
+            <div class="Register-text-view"><span class="Register-text">Register</span></div>
+           </div>
+        </div>
+        <nav class="navigation-view">
+           <div class="nav-bar-view">
+            <div class="nav-text-view"><span class="nav-text">Home</span></div>
+            <div class="nav-text-view"><span class="nav-text">Services</span></div>
+            <div class="nav-text-view"><span class="nav-text">About Us</span></div>
+            <div class="nav-text-view"><span class="nav-text">Contact Us</span></div>
+           </div>
+        </nav>
+        <div class="middle-view">
+            <div class="middle-top-view">
+                <div class="middle-card-img-view">
+                    <img class="offer-img" src="./images/offerimg.jpg" alt="User Icon">
+                </div>
+                <div class="middle-card-bottom-view">
+                    <div class="midcard-bottom-text-view"><span class="midcard-bottom-text">See All Offers</span></div>
+                    <img class="arrow-icon" src="./icons/arrowicon.png" alt="User Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        /* font-family: Arial, sans-serif; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        /* width: 80%; */
+        /* margin: 0 auto; */
+    }
+
+    .top-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border: 2px solid red;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .top-left{
+        display: flex;
+        align-items: center;
+    }
+    .gift-icon-view{
+        /* margin-right: 10px; */
+        height: 500;
+        width: 50;
+    }
+    .gift-icon-img{
+        height: 40px;
+        width: 40px;
+    }
+  
+     .top-middle-view{
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .search-view{
+        display: flex;
+        align-items: center;
+    }
+    .search-bar {
+        padding: 5px;
+        width: 450px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    .search-icon-view{
+        margin-top: 1px;
+     }
+     .search-icon-img{
+        height: 25px;
+     }
+
+     .top-right {
+        display: flex;
+        align-items: center;
+    }
+      .user-icon-view {
+        margin-right: 10px;
+    }
+    .vertical-bar{
+        font-weight: 900;
+        font-size: 20px;
+        margin: 0 5px 0 5px;
+    }
+    .navigation-view{
+        height: 50px;
+        border: 2px solid blue;
+    }
+    .nav-bar-view{
+        display: flex;
+        gap: 200px;
+        width: 70%;
+        margin: 10px auto;
+        border: 2px solid green;
+    }
+    .nav-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .middle-view{
+        border: 2px solid purple;
+        /* margin-top: 10px; */
+    }
+    .middle-top-view{
+        border: 2px solid orange;
+        border-radius: 10px;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .middle-card-bottom-view{
+        display: flex;
+        border: 2px solid black;
+        align-items: center;
+    }
+    .middle-card-bottom-text{
+
+    }
+    .arrow-icon{
+        width: 35px;
+        margin-left: 10px;
+    }
+
+</style>
+</html>
