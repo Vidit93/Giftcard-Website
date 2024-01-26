@@ -3,32 +3,36 @@
     padding: 0px;
 }
 
+/* Brand cards Css */
 .crousel{
     background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 35px 10px 50px;
+    margin-bottom: 5px;
 }
 
 .logo{
-    width: 200px;
-    height: 70px;
+    width: 170px;
+    height: 80px;
 }
 .cards{
     background-color: white;
     border-radius: 5px;
-    margin: 10px 15px;
+    margin: 10px 25px;
     padding: 10px 10px;
-    
+    box-shadow: 0px 0px 10px 1px black;
+    transition: all 0.3s ease-in-out;
 }
 
 .cards:hover{
-    box-shadow: 0px 0px 10px 1px black;
+    /* box-shadow: 0px 0px 10px 1px black; */
+    transform: scale(1.1);
     cursor: pointer;
 }
 
-
+/* Footer Css */
 .footer{
     display: flex;
     
@@ -39,8 +43,11 @@
     height: 70px;
     margin: 10px 20px;
 }
+.foot-view-left{
+    background-color: rgb(221, 214, 214);
+}
 
-.foot-info p{
+.foot-view-left p{
     margin: 10px 20px;
 }
 
@@ -72,18 +79,19 @@
     /* margin: 20px 20px; */
 }
 
-.foot-link{
+.foot-view-right{
     display: flex;
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
     padding: 20px 20px;
+    background-color: aliceblue;
 }
 
-.foot-link div{
+.foot-view-right div{
     margin: 20px 10px;
     padding: 10px 10px;
 }
 
-.foot-link h3{
+.foot-view-right h3{
     margin-bottom: 20px;
 }
 
@@ -93,5 +101,219 @@
     color: red;
     padding: 20px;
 }
+
+/* Login and Register */
+.login-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.login-text a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.Register-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.Register-text a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation bar and homepage cards */
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* background: linear-gradient(45deg, #2756d9, #ffffff); */
+  }
+
+  .top-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: red;
+    /* background: linear-gradient(45deg, #2756d9, #ffffff); */
+    /* border: 2px solid red; */
+    margin: 0 auto;
+  }
+  .top-left {
+    display: flex;
+    align-items: center;
+  }
+  .gift-icon-view {
+    /* margin-right: 10px; */
+    height: 500;
+    width: 50;
+  }
+  .gift-icon-img {
+    margin-left: 50px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .top-middle-view {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+  }
+  .search-view {
+    display: flex;
+    align-items: center;
+  }
+  .search-bar {
+    padding: 5px;
+    width: 450px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  .search-icon-view {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .search-icon-img {
+    height: 25px;
+  }
+
+  .top-right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  .user-icon-view {
+    margin-right: 10px;
+  }
+  .vertical-bar {
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 5px 0 5px;
+  }
+  
+  /* Navigation Bar */
+  .nav-bar{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    /* margin-top: 10px; */
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+  }
+  .nav-bar li{
+    list-style: none;
+    margin: 0px 40px 0px 30px;
+    font-size: 25px;
+}
+   .nav-bar li a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-bar li a:hover{
+    color: rgb(149, 144, 144);
+    /* text-decoration: none; */
+    cursor: pointer;
+  }
+
+  /* Middle  portion  */
+
+  .middle-view {
+    /* border: 2px solid purple; */
+    /* margin-top: 10px; */
+    display: flex;
+    background-color: #FAF9F6;
+  }
+  .middle-left-view {
+    /* margin: 0px 0px 0px 0px; */
+    /* border: 2px solid orange; */
+    border-radius: 10px;
+    width: 60%;
+    /* margin: 10px auto; */
+  }
+  .middle-card-img-view {
+    /* background-size: cover; This will make the background image cover the entire container */
+    /* background-position: center; */
+    height: 380px;
+}
+.offer-img {
+    /* background-size: cover; This will make the background image cover the entire container */
+    /* background-position: center; */
+    border-radius: 5px 5px 0px 0px;
+    width: 651px;
+    height: 320px;
+    margin: 35px 21px 0px 92px;
+  }
+  .middle-card-bottom-view {
+    display: flex;
+    /* border: 2px solid black; */
+    background-color: black;
+    align-items: center;
+    margin: -25px 15px 20px 92px;
+    border-radius: 0px 0px 5px 5px;
+  }
+  .midcard-bottom-text {
+    /* position: static; */
+    /* margin-top: -20px; */
+    margin-left: 10px;  
+    color: white;
+  }
+
+  .arrow-icon {
+    width: 35px;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .middle-right-view {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid black; */
+    /* margin: 0px 0px 0px 5px; */
+    border-radius: 8px;
+    /* height: 100px; */
+    width: 32%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 70px 52px 50px 50px;
+  }
+
+  .middle-right-view-top{
+    display: flex;
+  }
+  .middle-right-view-bottom{
+    display: flex;
+  }
+
+  .offer {
+    background-color: white;
+    /* box-sizing: border-box; */
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    /* elevation: above; */
+    box-shadow: 0px 0px 5px 1px black;
+  }
+
+  .offer:hover {
+    cursor: pointer;
+    background-color: red;
+    box-shadow: 0px 0px 5px 1px;
+  }
 
 
