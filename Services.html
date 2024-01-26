@@ -5,23 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <div class="container">
-        <nav class="navigation-view">
-            <div class="nav-bar-view">
-              <div class="nav-text-view"><span class="nav-text">Home</span></div>
-              <div class="nav-text-view">
-                <span class="nav-text">Services</span>
-              </div>
-              <div class="nav-text-view">
-                <span class="nav-text">About Us</span>
-              </div>
-              <div class="nav-text-view">
-                <span class="nav-text">Contact Us</span>
-              </div>
-            </div>
-          </nav>
+      <nav class="navigation-view">
+        <ul class="nav-bar">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="PrivacyPolicy.html">Contact Us</a></li>
+        </ul>
+      </nav>
           <div class="top-heading">
             <h1>Our Services</h1>
           </div>
@@ -54,12 +49,74 @@
                 </div>
             </div>
           </div>
+          <footer class="footer" id="footer">
+            <div class="foot-view-left">
+              <img src="logos/logoneon.png" alt="" class="" id="logo1">
+              <p>NeonGifts is a software specially developed for online gift card buying and selling services for different platforms in Rajasthan, Punjab, Haryana and other states.</p>
+      
+              <div class="mail">
+                <img src="icons/icons8-mail-48.png" alt="" class="contact-icon">
+                <a href="mailto:shubhamsaharan04@gmail.com">shubhamsaharan04@gmail.com</a>
+              </div>
+      
+              <div class="mobile">
+                <img src="icons/icons8-call-48.png" alt="" class="contact-icon">
+                <a href="tel:+917976754356">7976754356</a>
+              </div>
+      
+              <!-- <div class="social-icon">
+                <img src="icons/icons8-facebook-48.png" alt="">
+                <img src="icons/icons8-instagram-64.png" alt="">
+                <img src="icons/icons8-twitter-48.png" alt="">
+              </div> -->
+            </div>
+      
+            <div class="foot-view-right">
+              <div class="useful-links">
+                <h2>Useful Links</h2>
+                <ul>
+                  <li><a href="#footer">Support</a></li>
+                  <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                  <li><a href="AboutUs.html">Faqs</a></li>
+                  <li><a href="PrivacyPolicy.html">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <div class="foot-about">
+                <h2>About</h2>
+                <ul>
+                  <li><a href="homepage.html">Pricing</a></li>
+                  <li><a href="Services.html">Our Services</a></li>
+                  <li><a href="AboutUs.html">About</a></li>
+                </ul>
+              </div>
+              <div class="features">
+                <h2>Features</h2>
+                <ul>
+                  <li>Reports</li>
+                  <li>Instant Refill</li>
+                  <li>Latest Design</li>
+                  <li>UPI Payments</li>
+                  <li>Email Services</li>
+                  <li>Single Click Bills</li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+          <div class="foot-text">
+            <p>All rights reserved. Made with love bt Apni Company</p>
+          </div>
     </div>
 </body>
 <style>
+  .container{
+    background: linear-gradient(135deg, #466dda, #ffffff)
+  }
      .navigation-view {
-      height: 50px;
-      border: 2px solid blue;
+      /* height: 50px; */
+      /* border: 2px solid blue; */
+    }
+    .top-heading h1{
+      margin-top: 20px;
     }
 
     .nav-bar-view {
@@ -89,10 +146,13 @@
         /* justify-content: center; */
         width: 80%;
         margin: 20px auto;
-        border: 2px solid black;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 7px 1px black;
     }
     .card-content{
-        margin: 20px 0 0 0;
+        margin: 20px 20px 0 20px;
         font-size: 20px;
     }
     .card-content li{
