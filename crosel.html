@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #007BFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .carousel-container {
+            background-color: red;
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 300px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the carousel */
+        }
+
+        .cards {
+            flex: 0 0 auto;
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+    </style>
+    <title>Image Carousel</title>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="cards">
+            <img src="logos/Myntra-logo.png" class="logo" alt="">
+        </div>
+        <div class="cards">
+            <img src="logos/amazon-logo.jpg" class="logo" alt="">
+        </div>
+        <div class="cards">
+            <img src="logos/Myntra-logo.png" class="logo" alt="">
+        </div>
+        <div class="cards">
+            <img src="logos/Myntra-logo.png" class="logo" alt="">
+        </div>
+        <div class="cards">
+            <img src="logos/Myntra-logo.png" class="logo" alt="">
+        </div>
+    </div>
+</div>
+
+<button class="prev" onclick="prevCard()">Previous</button>
+<button class="next" onclick="nextCard()">Next</button>
+
+<script>
+    let currentIndex = 0;
+    const cards = document.querySelectorAll('.cards');
+
+    function showCard(index) {
+        const offset = -index * 100 + '%';
+        document.querySelector('.carousel').style.transform = 'translateX(' + offset + ')';
+    }
+
+    function prevCard() {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        showCard(currentIndex);
+    }
+
+    function nextCard() {
+        currentIndex = (currentIndex + 1) % cards.length;
+        showCard(currentIndex);
+    }
+</script>
+
+</body>
+</html>
