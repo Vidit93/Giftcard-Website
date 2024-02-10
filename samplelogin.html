@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #2756d9, #ffffff);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 700px;
+        }
+
+        #animationContainer {
+            width: 350px;
+            height: 531px;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 350px;
+            padding: 20px;
+            background-color: #fff;
+            align-items: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h2>Login Form</h2>
+            <form id="registrationForm">
+                <!-- <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="enter username" required />
+        </div> -->
+                <!-- <div class="form-group">
+          <input type="text" id="number" name="number" placeholder="enter phone number" required />
+        </div> -->
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="enter email id" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="enter password" required />
+                </div>
+                <!-- <div class="form-group">
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="enter confirm password"
+            required />
+        </div> -->
+                <input type="submit" value="Register" />
+            </form>
+            <div id="message" class="error"></div>
+        </div>
+        <div id="animationContainer"></div>
+    </div>
+
+    <script>
+
+        // Load animation JSON file
+        const animationContainer = document.getElementById('animationContainer');
+        const animationData = {
+            container: animationContainer,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'animation/animation3.json'
+        };
+
+        // Display animation
+        const animation = lottie.loadAnimation(animationData);
+
+        document
+            .getElementById("registrationForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Get form data
+                const formData = new FormData(this);
+                // const name = formData.get("name");
+                // const number = formData.get("number");
+                const email = formData.get("email");
+                const password = formData.get("password");
+                // const confirmPassword = formData.get("confirmPassword");
+
+                if (password !== confirmPassword) {
+                    document.getElementById("message").textContent =
+                        "Passwords do not match";
+                    return;
+                }
+
+                const user = {
+                    name: name,
+                    number: number,
+                    e_mail: email,
+                    pass: password,
+                    cpass: confirmPassword,
+                };
+
+                fetch("https://user-api-7n3f.onrender.com/api/users", {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(user),
+                })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok");
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        // Handle successful registration
+                        console.log("User registered successfully:", data);
+                        document.getElementById("message").classList.remove("error");
+                        document.getElementById("message").textContent =
+                            "Registration successful";
+                        window.location.href = "login.html";
+                    })
+                    .catch((error) => {
+                        // Handle registration error
+                        console.error("Registration failed:", error);
+                        document.getElementById("message").classList.add("error");
+                        document.getElementById("message").textContent =
+                            "Registration failed. Please try again later.";
+                    });
+            });
+    </script>
+</body>
+
+</html>

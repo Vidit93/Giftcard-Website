@@ -1,0 +1,1463 @@
+{
+    "categories": [
+      {
+        "name": "Myntra",
+        "image": "logos/Myntra-logo.png",
+        "subcategories": [
+            {
+                "value": "100",
+                "cashback": "5% Cashback",
+                "Eprice": "95",
+                "validity": "3-6 Months"
+            },
+            {
+                "value": "200",
+                "cashback": "5% Cashback",
+                "Eprice": "190",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "500",
+                "cashback": "3% Cashback",
+                "Eprice": "485",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "1000",
+                "cashback": "5% Cashback",
+                "Eprice": "970",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "2000",
+                "cashback": "6.5% Cashback",
+                "Eprice": "1870",
+                "validity": "1-3 Months"
+            },
+            {
+                "value": "2000",
+                "cashback": "3.5% Cashback",
+                "Eprice": "1930",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "5000",
+                "cashback": "4.5% Cashback",
+                "Eprice": "4775",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "3000",
+                "cashback": "4% Cashback",
+                "Eprice": "2880",
+                "validity": "3-8 Months"
+            },
+            {
+                "value": "4000",
+                "cashback": "4.2% Cashback",
+                "Eprice": "3840",
+                "validity": "2-7 Months"
+            },
+            {
+                "value": "6000",
+                "cashback": "4.8% Cashback",
+                "Eprice": "5712",
+                "validity": "5-10 Months"
+            },
+            {
+                "value": "7000",
+                "cashback": "5% Cashback",
+                "Eprice": "6650",
+                "validity": "4-9 Months"
+            },
+            {
+                "value": "8000",
+                "cashback": "5.2% Cashback",
+                "Eprice": "7584",
+                "validity": "3-6 Months"
+            },
+            {
+                "value": "9000",
+                "cashback": "5.5% Cashback",
+                "Eprice": "8505",
+                "validity": "2-5 Months"
+            }
+        ]
+    },
+      {
+        "name": "Goibibo",
+        "image": "logos/goibibo.png", 
+        "subcategories": [
+          {
+            "value": "100",
+            "cashback": "5% Cashback",
+            "Eprice": "95",
+            "validity": "3-6 Months"
+          },
+          {
+            "value": "200",
+            "cashback": "5% Cashback",
+            "Eprice": "190",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "500",
+            "cashback": "2% Cashback",
+            "Eprice": "490",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "1000",
+            "cashback": "7% Cashback",
+            "Eprice": "930",
+            "validity": "4-8 Months"
+          },
+          {
+            "value": "1500",
+            "cashback": "2% Cashback",
+            "Eprice": "1470",
+            "validity": "4-8 Months"
+          },
+          {
+            "value": "2000",
+            "cashback": "5% Cashback",
+            "Eprice": "1900",
+            "validity": "6-8 Months"
+          },
+          {
+            "value": "2000",
+            "cashback": "6.5% Cashback",
+            "Eprice": "1870",
+            "validity": "4-6 Months"
+          }
+        ]
+      },
+      {
+        "name": "Amazon",
+        "image": "logos/amazon-logo.jpg",
+        "subcategories": [
+            {
+                "value": "100",
+                "cashback": "0.6% Cashback",
+                "Eprice": "99.50",
+                "validity": "0-6 Months"
+            },
+            {
+                "value": "200",
+                "cashback": "0.9% Cashback",
+                "Eprice": "198.60",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "500",
+                "cashback": "1.1% Cashback",
+                "Eprice": "495",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "1000",
+                "cashback": "0.9% Cashback",
+                "Eprice": "987",
+                "validity": "4-12 Months"
+            },
+            {
+                "value": "2000",
+                "cashback": "0.8% Cashback",
+                "Eprice": "1970",
+                "validity": "4-12 Months"
+            },
+            {
+                "value": "1500",
+                "cashback": "0.9% Cashback",
+                "Eprice": "1488",
+                "validity": "3-9 Months"
+            },
+            {
+                "value": "3000",
+                "cashback": "0.8% Cashback",
+                "Eprice": "2970",
+                "validity": "5-11 Months"
+            },
+            {
+                "value": "3500",
+                "cashback": "0.8% Cashback",
+                "Eprice": "3465",
+                "validity": "4-10 Months"
+            },
+            {
+                "value": "4000",
+                "cashback": "0.8% Cashback",
+                "Eprice": "3960",
+                "validity": "3-8 Months"
+            },
+            {
+                "value": "5000",
+                "cashback": "0.9% Cashback",
+                "Eprice": "4940",
+                "validity": "6-12 Months"
+            }
+        ]
+    },
+      {
+        "name": "Makemytrip",
+        "image": "logos/makemytrip_logo.png", 
+        "subcategories": [
+          {
+            "value": "100",
+            "cashback": "5% Cashback",
+            "Eprice": "95",
+            "validity": "3-6 Months"
+          },
+          {
+            "value": "200",
+            "cashback": "5% Cashback",
+            "Eprice": "190",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "500",
+            "cashback": "3% Cashback",
+            "Eprice": "485",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "1000",
+            "cashback": "5% Cashback",
+            "Eprice": "950",
+            "validity": "4-8 Months"
+          },
+          {
+            "value": "1500",
+            "cashback": "5% Cashback",
+            "Eprice": "1425",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "2000",
+            "cashback": "6.5% Cashback",
+            "Eprice": "1870",
+            "validity": "6-12 Months"
+          }
+        ]
+      },
+      {
+        "name": "Ajio",
+        "image": "logos/ajio-logo.jpeg", 
+        "subcategories": [
+          {
+            "value": "100",
+            "cashback": "5% Cashback",
+            "Eprice": "95",
+            "validity": "3-6 Months"
+          },
+          {
+            "value": "200",
+            "cashback": "5% Cashback",
+            "Eprice": "190",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "500",
+            "cashback": "3% Cashback",
+            "Eprice": "485",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "1000",
+            "cashback": "5% Cashback",
+            "Eprice": "950",
+            "validity": "0-12 Months"
+          },
+          {
+            "value": "2000",
+            "cashback": "6.5% Cashback",
+            "Eprice": "1870",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "5000",
+            "cashback": "2.5% Cashback",
+            "Eprice": "4875",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "5000",
+            "cashback": "1.5% Cashback",
+            "Eprice": "4925",
+            "validity": "2-4 Months"
+          }
+        ]
+      },
+      {
+        "name": "Swiggy",
+        "image": "logos/swiggy-logo.png",
+        "subcategories": [
+            {
+                "value": "100",
+                "cashback": "5% Cashback",
+                "Eprice": "95",
+                "validity": "3-6 Months"
+            },
+            {
+                "value": "200",
+                "cashback": "5% Cashback",
+                "Eprice": "190",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "500",
+                "cashback": "3% Cashback",
+                "Eprice": "485",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "750",
+                "cashback": "3% Cashback",
+                "Eprice": "727",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "1000",
+                "cashback": "5% Cashback",
+                "Eprice": "950",
+                "validity": "0-12 Months"
+            },
+            {
+                "value": "2000",
+                "cashback": "6.5% Cashback",
+                "Eprice": "1870",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "1500",
+                "cashback": "4% Cashback",
+                "Eprice": "1440",
+                "validity": "3-9 Months"
+            },
+            {
+                "value": "3000",
+                "cashback": "7% Cashback",
+                "Eprice": "2790",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "2500",
+                "cashback": "6% Cashback",
+                "Eprice": "2350",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "3500",
+                "cashback": "7.5% Cashback",
+                "Eprice": "3238",
+                "validity": "6-12 Months"
+            }
+        ]
+    },    
+    {
+      "name": "Zomato",
+      "image": "logos/zomato-logo.png",
+      "subcategories": [
+          {
+              "value": "100",
+              "cashback": "6% Cashback",
+              "Eprice": "94",
+              "validity": "3-6 Months"
+          },
+          {
+              "value": "200",
+              "cashback": "6% Cashback",
+              "Eprice": "188",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "500",
+              "cashback": "4% Cashback",
+              "Eprice": "480",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "1000",
+              "cashback": "6% Cashback",
+              "Eprice": "940",
+              "validity": "0-12 Months"
+          },
+          {
+              "value": "2000",
+              "cashback": "7.5% Cashback",
+              "Eprice": "1850",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "1500",
+              "cashback": "5% Cashback",
+              "Eprice": "1425",
+              "validity": "3-9 Months"
+          },
+          {
+              "value": "3000",
+              "cashback": "8% Cashback",
+              "Eprice": "2760",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "2500",
+              "cashback": "7% Cashback",
+              "Eprice": "2325",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "3500",
+              "cashback": "8.5% Cashback",
+              "Eprice": "3208",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "4000",
+              "cashback": "9% Cashback",
+              "Eprice": "3640",
+              "validity": "6-12 Months"
+          }
+      ]
+  },
+  {
+    "name": "Allen Solley",
+    "image": "logos/allen-solley.png",
+    "subcategories": [
+        {
+            "value": "100",
+            "cashback": "3% Cashback",
+            "Eprice": "97",
+            "validity": "3-6 Months"
+        },
+        {
+            "value": "200",
+            "cashback": "3% Cashback",
+            "Eprice": "194",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "500",
+            "cashback": "2% Cashback",
+            "Eprice": "490",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "1000",
+            "cashback": "3% Cashback",
+            "Eprice": "970",
+            "validity": "0-12 Months"
+        },
+        {
+            "value": "2000",
+            "cashback": "4.5% Cashback",
+            "Eprice": "1910",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "1500",
+            "cashback": "2.5% Cashback",
+            "Eprice": "1463",
+            "validity": "3-9 Months"
+        },
+        {
+            "value": "3000",
+            "cashback": "4% Cashback",
+            "Eprice": "2880",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "2500",
+            "cashback": "3.5% Cashback",
+            "Eprice": "2412.50",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "3500",
+            "cashback": "4.5% Cashback",
+            "Eprice": "3342.50",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "4000",
+            "cashback": "5% Cashback",
+            "Eprice": "3800",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "4500",
+            "cashback": "5.5% Cashback",
+            "Eprice": "4267.50",
+            "validity": "6-12 Months"
+        }
+    ]
+},
+{
+  "name": "Bata",
+  "image": "logos/Bata-logo.jpg",
+  "subcategories": [
+      {
+          "value": "100",
+          "cashback": "3% Cashback",
+          "Eprice": "97",
+          "validity": "2-5 Months"
+      },
+      {
+          "value": "200",
+          "cashback": "3% Cashback",
+          "Eprice": "194",
+          "validity": "5-10 Months"
+      },
+      {
+          "value": "500",
+          "cashback": "2% Cashback",
+          "Eprice": "490",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "1000",
+          "cashback": "3% Cashback",
+          "Eprice": "970",
+          "validity": "0-11 Months"
+      },
+      {
+          "value": "2000",
+          "cashback": "4.5% Cashback",
+          "Eprice": "1910",
+          "validity": "5-11 Months"
+      },
+      {
+          "value": "1500",
+          "cashback": "2.5% Cashback",
+          "Eprice": "1463",
+          "validity": "4-8 Months"
+      },
+      {
+          "value": "3000",
+          "cashback": "4% Cashback",
+          "Eprice": "2880",
+          "validity": "7-12 Months"
+      },
+      {
+          "value": "2500",
+          "cashback": "3.5% Cashback",
+          "Eprice": "2412.50",
+          "validity": "8-12 Months"
+      },
+      {
+          "value": "3500",
+          "cashback": "4.5% Cashback",
+          "Eprice": "3342.50",
+          "validity": "6-11 Months"
+      },
+      {
+          "value": "4000",
+          "cashback": "5% Cashback",
+          "Eprice": "3800",
+          "validity": "5-10 Months"
+      },
+      {
+          "value": "4500",
+          "cashback": "5.5% Cashback",
+          "Eprice": "4267.50",
+          "validity": "3-9 Months"
+      },
+      {
+          "value": "5000",
+          "cashback": "6% Cashback",
+          "Eprice": "4700",
+          "validity": "4-11 Months"
+      }
+  ]
+},
+{
+  "name": "Flipkart",
+  "image": "logos/Flipkart.jpg",
+  "subcategories": [
+      {
+          "value": "100",
+          "cashback": "3% Cashback",
+          "Eprice": "97",
+          "validity": "2-5 Months"
+      },
+      {
+          "value": "200",
+          "cashback": "3% Cashback",
+          "Eprice": "194",
+          "validity": "5-10 Months"
+      },
+      {
+          "value": "500",
+          "cashback": "2% Cashback",
+          "Eprice": "490",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "1000",
+          "cashback": "3% Cashback",
+          "Eprice": "970",
+          "validity": "0-11 Months"
+      },
+      {
+          "value": "2000",
+          "cashback": "4.5% Cashback",
+          "Eprice": "1910",
+          "validity": "5-11 Months"
+      },
+      {
+          "value": "1500",
+          "cashback": "2.5% Cashback",
+          "Eprice": "1463",
+          "validity": "4-8 Months"
+      },
+      {
+          "value": "3000",
+          "cashback": "4% Cashback",
+          "Eprice": "2880",
+          "validity": "7-12 Months"
+      },
+      {
+          "value": "2500",
+          "cashback": "3.5% Cashback",
+          "Eprice": "2412.50",
+          "validity": "8-12 Months"
+      },
+      {
+          "value": "3500",
+          "cashback": "4.5% Cashback",
+          "Eprice": "3342.50",
+          "validity": "6-11 Months"
+      },
+      {
+          "value": "4000",
+          "cashback": "5% Cashback",
+          "Eprice": "3800",
+          "validity": "5-10 Months"
+      },
+      {
+          "value": "4500",
+          "cashback": "5.5% Cashback",
+          "Eprice": "4267.50",
+          "validity": "3-9 Months"
+      },
+      {
+          "value": "5000",
+          "cashback": "6% Cashback",
+          "Eprice": "4700",
+          "validity": "4-11 Months"
+      },
+      {
+          "value": "6000",
+          "cashback": "6.5% Cashback",
+          "Eprice": "5600",
+          "validity": "5-12 Months"
+      },
+      {
+          "value": "7000",
+          "cashback": "7% Cashback",
+          "Eprice": "6510",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "8000",
+          "cashback": "7.5% Cashback",
+          "Eprice": "7400",
+          "validity": "7-12 Months"
+      }
+  ]
+},
+{
+  "name": "Dominos",
+  "image": "logos/Dominos.jpg",
+  "subcategories": [
+      {
+          "value": "100",
+          "cashback": "2% Cashback",
+          "Eprice": "98",
+          "validity": "2-4 Months"
+      },
+      {
+          "value": "200",
+          "cashback": "2% Cashback",
+          "Eprice": "196",
+          "validity": "4-8 Months"
+      },
+      {
+          "value": "500",
+          "cashback": "1% Cashback",
+          "Eprice": "495",
+          "validity": "6-10 Months"
+      },
+      {
+          "value": "1000",
+          "cashback": "2% Cashback",
+          "Eprice": "980",
+          "validity": "0-10 Months"
+      },
+      {
+          "value": "2000",
+          "cashback": "3% Cashback",
+          "Eprice": "1940",
+          "validity": "5-11 Months"
+      },
+      {
+          "value": "1500",
+          "cashback": "1.5% Cashback",
+          "Eprice": "1477.50",
+          "validity": "4-9 Months"
+      },
+      {
+          "value": "3000",
+          "cashback": "2.5% Cashback",
+          "Eprice": "2925",
+          "validity": "7-12 Months"
+      },
+      {
+          "value": "2500",
+          "cashback": "2% Cashback",
+          "Eprice": "2450",
+          "validity": "8-12 Months"
+      },
+      {
+          "value": "3500",
+          "cashback": "2.5% Cashback",
+          "Eprice": "3417.50",
+          "validity": "6-11 Months"
+      },
+      {
+          "value": "4000",
+          "cashback": "3% Cashback",
+          "Eprice": "3880",
+          "validity": "5-10 Months"
+      },
+      {
+          "value": "4500",
+          "cashback": "3.5% Cashback",
+          "Eprice": "4357.50",
+          "validity": "3-8 Months"
+      },
+      {
+          "value": "5000",
+          "cashback": "4% Cashback",
+          "Eprice": "4800",
+          "validity": "4-11 Months"
+      },
+      {
+          "value": "6000",
+          "cashback": "4.5% Cashback",
+          "Eprice": "5700",
+          "validity": "5-12 Months"
+      },
+      {
+          "value": "7000",
+          "cashback": "5% Cashback",
+          "Eprice": "6650",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "8000",
+          "cashback": "5.5% Cashback",
+          "Eprice": "7600",
+          "validity": "7-12 Months"
+      }
+  ]
+},
+{
+  "name": "Firstcry",
+  "image": "logos/FirstCry.jpg",
+  "subcategories": [
+      {
+          "value": "100",
+          "cashback": "2% Cashback",
+          "Eprice": "98",
+          "validity": "2-4 Months"
+      },
+      {
+          "value": "200",
+          "cashback": "2% Cashback",
+          "Eprice": "196",
+          "validity": "4-8 Months"
+      },
+      {
+          "value": "500",
+          "cashback": "1% Cashback",
+          "Eprice": "495",
+          "validity": "6-10 Months"
+      },
+      {
+          "value": "1000",
+          "cashback": "2% Cashback",
+          "Eprice": "980",
+          "validity": "0-10 Months"
+      },
+      {
+          "value": "2000",
+          "cashback": "3% Cashback",
+          "Eprice": "1940",
+          "validity": "5-11 Months"
+      },
+      {
+          "value": "1500",
+          "cashback": "1.5% Cashback",
+          "Eprice": "1477.50",
+          "validity": "4-9 Months"
+      },
+      {
+          "value": "3000",
+          "cashback": "2.5% Cashback",
+          "Eprice": "2925",
+          "validity": "7-12 Months"
+      },
+      {
+          "value": "2500",
+          "cashback": "2% Cashback",
+          "Eprice": "2450",
+          "validity": "8-12 Months"
+      },
+      {
+          "value": "3500",
+          "cashback": "2.5% Cashback",
+          "Eprice": "3417.50",
+          "validity": "6-11 Months"
+      },
+      {
+          "value": "4000",
+          "cashback": "3% Cashback",
+          "Eprice": "3880",
+          "validity": "5-10 Months"
+      },
+      {
+          "value": "4500",
+          "cashback": "3.5% Cashback",
+          "Eprice": "4357.50",
+          "validity": "3-8 Months"
+      },
+      {
+          "value": "5000",
+          "cashback": "4% Cashback",
+          "Eprice": "4800",
+          "validity": "4-11 Months"
+      },
+      {
+          "value": "6000",
+          "cashback": "4.5% Cashback",
+          "Eprice": "5700",
+          "validity": "5-12 Months"
+      },
+      {
+          "value": "7000",
+          "cashback": "5% Cashback",
+          "Eprice": "6650",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "8000",
+          "cashback": "5.5% Cashback",
+          "Eprice": "7600",
+          "validity": "7-12 Months"
+      }
+  ]
+},
+{
+  "name": "KFC",
+  "image": "logos/kfc-logo.jpg",
+  "subcategories": [
+      {
+          "value": "100",
+          "cashback": "0.5% Cashback",
+          "Eprice": "99.50",
+          "validity": "1-3 Months"
+      },
+      {
+          "value": "200",
+          "cashback": "0.5% Cashback",
+          "Eprice": "198.50",
+          "validity": "2-4 Months"
+      },
+      {
+          "value": "500",
+          "cashback": "0.3% Cashback",
+          "Eprice": "498.50",
+          "validity": "3-6 Months"
+      },
+      {
+          "value": "1000",
+          "cashback": "0.5% Cashback",
+          "Eprice": "995.00",
+          "validity": "1-7 Months"
+      },
+      {
+          "value": "2000",
+          "cashback": "0.65% Cashback",
+          "Eprice": "1858.50",
+          "validity": "4-10 Months"
+      },
+      {
+          "value": "1500",
+          "cashback": "0.35% Cashback",
+          "Eprice": "1495.25",
+          "validity": "3-8 Months"
+      },
+      {
+          "value": "3000",
+          "cashback": "0.25% Cashback",
+          "Eprice": "2992.50",
+          "validity": "5-12 Months"
+      },
+      {
+          "value": "2500",
+          "cashback": "0.4% Cashback",
+          "Eprice": "2489.00",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "3500",
+          "cashback": "0.55% Cashback",
+          "Eprice": "3479.25",
+          "validity": "7-12 Months"
+      },
+      {
+          "value": "4000",
+          "cashback": "0.6% Cashback",
+          "Eprice": "3960.00",
+          "validity": "6-11 Months"
+      },
+      {
+          "value": "4500",
+          "cashback": "0.7% Cashback",
+          "Eprice": "4465.50",
+          "validity": "4-9 Months"
+      },
+      {
+          "value": "5000",
+          "cashback": "0.75% Cashback",
+          "Eprice": "4951.25",
+          "validity": "2-7 Months"
+      },
+      {
+          "value": "6000",
+          "cashback": "0.8% Cashback",
+          "Eprice": "5940.00",
+          "validity": "3-8 Months"
+      },
+      {
+          "value": "7000",
+          "cashback": "0.9% Cashback",
+          "Eprice": "6930.00",
+          "validity": "4-9 Months"
+      },
+      {
+          "value": "8000",
+          "cashback": "1% Cashback",
+          "Eprice": "7920.00",
+          "validity": "5-10 Months"
+      }
+  ]
+},
+      {
+        "name": "mamaearth",
+        "image": "logos/mamaearth.jpeg",
+        "subcategories": [
+            {
+                "value": "100",
+                "cashback": "5% Cashback",
+                "Eprice": "95",
+                "validity": "3-6 Months"
+            },
+            {
+                "value": "200",
+                "cashback": "5% Cashback",
+                "Eprice": "190",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "500",
+                "cashback": "3% Cashback",
+                "Eprice": "485",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "1000",
+                "cashback": "5% Cashback",
+                "Eprice": "950",
+                "validity": "0-12 Months"
+            },
+            {
+              "value": "1500",
+              "cashback": "4% Cashback",
+              "Eprice": "1440",
+              "validity": "3-9 Months"
+            },
+            {
+                "value": "2000",
+                "cashback": "6.5% Cashback",
+                "Eprice": "1870",
+                "validity": "6-12 Months"
+            },
+            {
+              "value": "2500",
+              "cashback": "6% Cashback",
+              "Eprice": "2350",
+              "validity": "6-12 Months"
+            },
+            {
+                "value": "3000",
+                "cashback": "7% Cashback",
+                "Eprice": "2790",
+                "validity": "6-12 Months"
+            }
+        ]
+    },
+    {
+      "name": "Nykaa",
+      "image": "logos/nykaa.jpg",
+      "subcategories": [
+          {
+              "value": "100",
+              "cashback": "0.5% Cashback",
+              "Eprice": "99.50",
+              "validity": "1-3 Months"
+          },
+          {
+              "value": "200",
+              "cashback": "0.5% Cashback",
+              "Eprice": "198.50",
+              "validity": "2-4 Months"
+          },
+          {
+              "value": "500",
+              "cashback": "0.3% Cashback",
+              "Eprice": "498.50",
+              "validity": "3-6 Months"
+          },
+          {
+              "value": "1000",
+              "cashback": "0.5% Cashback",
+              "Eprice": "995.00",
+              "validity": "1-7 Months"
+          },
+          {
+              "value": "2000",
+              "cashback": "0.65% Cashback",
+              "Eprice": "1858.50",
+              "validity": "4-10 Months"
+          },
+          {
+              "value": "1500",
+              "cashback": "0.35% Cashback",
+              "Eprice": "1495.25",
+              "validity": "3-8 Months"
+          },
+          {
+              "value": "3000",
+              "cashback": "0.25% Cashback",
+              "Eprice": "2992.50",
+              "validity": "5-12 Months"
+          },
+          {
+              "value": "2500",
+              "cashback": "0.4% Cashback",
+              "Eprice": "2489.00",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "3500",
+              "cashback": "0.55% Cashback",
+              "Eprice": "3479.25",
+              "validity": "7-12 Months"
+          },
+          {
+              "value": "4000",
+              "cashback": "0.6% Cashback",
+              "Eprice": "3960.00",
+              "validity": "6-11 Months"
+          }
+      ]
+  },
+      {
+        "name": "SonyLiv",
+        "image": "logos/sonyliv.jpg", 
+        "subcategories": [
+          {
+            "value": "100",
+            "cashback": "5% Cashback",
+            "Eprice": "95",
+            "validity": "3-6 Months"
+          },
+          {
+            "value": "200",
+            "cashback": "5% Cashback",
+            "Eprice": "190",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "500",
+            "cashback": "3% Cashback",
+            "Eprice": "485",
+            "validity": "6-12 Months"
+          },
+          {
+            "value": "1000",
+            "cashback": "5% Cashback",
+            "Eprice": "950",
+            "validity": "0-12 Months"
+          },
+          {
+            "value": "2000",
+            "cashback": "6.5% Cashback",
+            "Eprice": "1870",
+            "validity": "6-12 Months"
+          }
+        ]
+      },
+      {
+        "name": "Trends",
+        "image": "logos/trends-logo.jpeg",
+        "subcategories": [
+            {
+                "value": "100",
+                "cashback": "0.25% Cashback",
+                "Eprice": "99.75",
+                "validity": "1-3 Months"
+            },
+            {
+                "value": "200",
+                "cashback": "0.3% Cashback",
+                "Eprice": "199.40",
+                "validity": "2-4 Months"
+            },
+            {
+                "value": "500",
+                "cashback": "0.15% Cashback",
+                "Eprice": "498.25",
+                "validity": "3-6 Months"
+            },
+            {
+                "value": "1000",
+                "cashback": "0.25% Cashback",
+                "Eprice": "997.50",
+                "validity": "1-7 Months"
+            },
+            {
+                "value": "2000",
+                "cashback": "0.35% Cashback",
+                "Eprice": "1985.30",
+                "validity": "4-10 Months"
+            },
+            {
+                "value": "1500",
+                "cashback": "0.2% Cashback",
+                "Eprice": "1497.00",
+                "validity": "3-8 Months"
+            },
+            {
+                "value": "3000",
+                "cashback": "0.1% Cashback",
+                "Eprice": "2997.00",
+                "validity": "5-12 Months"
+            },
+            {
+                "value": "2500",
+                "cashback": "0.3% Cashback",
+                "Eprice": "2492.50",
+                "validity": "6-12 Months"
+            },
+            {
+                "value": "3500",
+                "cashback": "0.4% Cashback",
+                "Eprice": "3486.00",
+                "validity": "7-12 Months"
+            },
+            {
+                "value": "4000",
+                "cashback": "0.45% Cashback",
+                "Eprice": "3981.00",
+                "validity": "6-11 Months"
+            },
+            {
+                "value": "4500",
+                "cashback": "0.5% Cashback",
+                "Eprice": "4458.75",
+                "validity": "4-9 Months"
+            },
+            {
+                "value": "5000",
+                "cashback": "0.55% Cashback",
+                "Eprice": "4952.50",
+                "validity": "2-7 Months"
+            }
+        ]
+    },
+    {
+      "name": "Woodland",
+      "image": "logos/Woodland-logo.jpg",
+      "subcategories": [
+          {
+              "value": "100",
+              "cashback": "0.25% Cashback",
+              "Eprice": "99.75",
+              "validity": "1-3 Months"
+          },
+          {
+              "value": "200",
+              "cashback": "0.3% Cashback",
+              "Eprice": "199.40",
+              "validity": "2-4 Months"
+          },
+          {
+              "value": "500",
+              "cashback": "0.15% Cashback",
+              "Eprice": "498.25",
+              "validity": "3-6 Months"
+          },
+          {
+              "value": "1000",
+              "cashback": "0.25% Cashback",
+              "Eprice": "997.50",
+              "validity": "1-7 Months"
+          },
+          {
+              "value": "2000",
+              "cashback": "0.35% Cashback",
+              "Eprice": "1985.30",
+              "validity": "4-10 Months"
+          },
+          {
+              "value": "1500",
+              "cashback": "0.2% Cashback",
+              "Eprice": "1497.00",
+              "validity": "3-8 Months"
+          },
+          {
+              "value": "3000",
+              "cashback": "0.1% Cashback",
+              "Eprice": "2997.00",
+              "validity": "5-12 Months"
+          },
+          {
+              "value": "2500",
+              "cashback": "0.3% Cashback",
+              "Eprice": "2492.50",
+              "validity": "6-12 Months"
+          },
+          {
+              "value": "3500",
+              "cashback": "0.4% Cashback",
+              "Eprice": "3486.00",
+              "validity": "7-12 Months"
+          },
+          {
+              "value": "4000",
+              "cashback": "0.45% Cashback",
+              "Eprice": "3981.00",
+              "validity": "6-11 Months"
+          },
+          {
+              "value": "4500",
+              "cashback": "0.5% Cashback",
+              "Eprice": "4458.75",
+              "validity": "4-9 Months"
+          },
+          {
+              "value": "5000",
+              "cashback": "0.55% Cashback",
+              "Eprice": "4952.50",
+              "validity": "2-7 Months"
+          }
+      ]
+  },
+  {
+    "name": "Yatra",
+    "image": "logos/yatra-logo.jpg",
+    "subcategories": [
+        {
+            "value": "100",
+            "cashback": "2% Cashback",
+            "Eprice": "98",
+            "validity": "1-3 Months"
+        },
+        {
+            "value": "200",
+            "cashback": "2% Cashback",
+            "Eprice": "196",
+            "validity": "2-4 Months"
+        },
+        {
+            "value": "500",
+            "cashback": "1.5% Cashback",
+            "Eprice": "492.50",
+            "validity": "3-6 Months"
+        },
+        {
+            "value": "1000",
+            "cashback": "2% Cashback",
+            "Eprice": "980",
+            "validity": "1-7 Months"
+        },
+        {
+            "value": "2000",
+            "cashback": "3% Cashback",
+            "Eprice": "1940",
+            "validity": "4-10 Months"
+        },
+        {
+            "value": "1500",
+            "cashback": "1.8% Cashback",
+            "Eprice": "1470",
+            "validity": "3-8 Months"
+        },
+        {
+            "value": "3000",
+            "cashback": "1% Cashback",
+            "Eprice": "2970",
+            "validity": "5-12 Months"
+        },
+        {
+            "value": "2500",
+            "cashback": "1.7% Cashback",
+            "Eprice": "2450",
+            "validity": "6-12 Months"
+        },
+        {
+            "value": "3500",
+            "cashback": "2% Cashback",
+            "Eprice": "3430",
+            "validity": "7-12 Months"
+        },
+        {
+            "value": "4000",
+            "cashback": "2.2% Cashback",
+            "Eprice": "3910",
+            "validity": "6-11 Months"
+        },
+        {
+            "value": "4500",
+            "cashback": "2.5% Cashback",
+            "Eprice": "4390",
+            "validity": "4-9 Months"
+        },
+        {
+            "value": "5000",
+            "cashback": "2.7% Cashback",
+            "Eprice": "4875",
+            "validity": "2-7 Months"
+        },
+        {
+            "value": "6000",
+            "cashback": "3% Cashback",
+            "Eprice": "5820",
+            "validity": "3-8 Months"
+        },
+        {
+            "value": "7000",
+            "cashback": "3.2% Cashback",
+            "Eprice": "6780",
+            "validity": "4-9 Months"
+        },
+        {
+            "value": "8000",
+            "cashback": "3.5% Cashback",
+            "Eprice": "7720",
+            "validity": "5-10 Months"
+        }
+    ]
+},
+{
+  "name": "Bookmyshow",
+  "image": "logos/bookmyshow.png",
+  "subcategories": [
+      {
+          "value": "100",
+          "cashback": "2% Cashback",
+          "Eprice": "98",
+          "validity": "1-3 Months"
+      },
+      {
+          "value": "200",
+          "cashback": "2% Cashback",
+          "Eprice": "196",
+          "validity": "2-4 Months"
+      },
+      {
+          "value": "500",
+          "cashback": "1.5% Cashback",
+          "Eprice": "492.50",
+          "validity": "3-6 Months"
+      },
+      {
+          "value": "1000",
+          "cashback": "2% Cashback",
+          "Eprice": "980",
+          "validity": "1-7 Months"
+      },
+      {
+          "value": "2000",
+          "cashback": "3% Cashback",
+          "Eprice": "1940",
+          "validity": "4-10 Months"
+      },
+      {
+          "value": "1500",
+          "cashback": "1.8% Cashback",
+          "Eprice": "1470",
+          "validity": "3-8 Months"
+      },
+      {
+          "value": "3000",
+          "cashback": "1% Cashback",
+          "Eprice": "2970",
+          "validity": "5-12 Months"
+      },
+      {
+          "value": "2500",
+          "cashback": "1.7% Cashback",
+          "Eprice": "2450",
+          "validity": "6-12 Months"
+      },
+      {
+          "value": "3500",
+          "cashback": "2% Cashback",
+          "Eprice": "3430",
+          "validity": "7-12 Months"
+      },
+      {
+          "value": "4000",
+          "cashback": "2.2% Cashback",
+          "Eprice": "3910",
+          "validity": "6-11 Months"
+      },
+      {
+          "value": "4500",
+          "cashback": "2.5% Cashback",
+          "Eprice": "4390",
+          "validity": "4-9 Months"
+      },
+      {
+          "value": "5000",
+          "cashback": "2.7% Cashback",
+          "Eprice": "4875",
+          "validity": "2-7 Months"
+      },
+      {
+          "value": "6000",
+          "cashback": "3% Cashback",
+          "Eprice": "5820",
+          "validity": "3-8 Months"
+      },
+      {
+          "value": "7000",
+          "cashback": "3.2% Cashback",
+          "Eprice": "6780",
+          "validity": "4-9 Months"
+      },
+      {
+          "value": "8000",
+          "cashback": "3.5% Cashback",
+          "Eprice": "7720",
+          "validity": "5-10 Months"
+      }
+  ]
+}
+    ]
+  }
+  
