@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Data from JSON</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <a href="https://api.whatsapp.com/send?phone=7976754356" target="_blank" class="whatsapp-icon">
+    <img src="icons/whatsapp.png" alt="WhatsApp">
+  </a>
+    <!-- <====================================================================Navigation-Bar=======================================================================>-->
+
+    <div class="navbar">
+        <a href="logos/logoneon.png" class="navbar-logo">NeonGifts</a>
+        <div class="navbar-links" id="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="cardcategory.html">Pricing</a>
+        </div>
+        <div class="navbar-right" id="navbar-right">
+            <a href="samplelogin.html">Login</a>
+            <a href="sampleregister.html">Register</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+      <!-- <====================================================================Navigation-Bar=======================================================================>-->
+
+
+
+    <div id="categories-list1"></div>
+    <div id="categories-list"></div>
+
+    <!-- <====================================================================Footer-section=======================================================================>-->
+    <footer class="footer" id="footer">
+        <div class="foot-view-left">
+          <img src="logos/logoneon.png" alt="" class="" id="logo1">
+          <p>NeonGifts is a software specially developed for online gift card buying and selling services for different platforms in Rajasthan, Punjab, Haryana and other states.</p>
+    
+          <div class="mail">
+            <!-- <img src="icons/mail.png" alt="" class="contact-icon"> -->
+            <a href="mailto:shubhamsaharan04@gmail.com"><i class="fas fa-envelope"></i> shubhamsaharan04@gmail.com</a>
+          </div>
+    
+          <div class="mobile">
+            <!-- <img src="icons/call.png" alt="" class="contact-icon"> -->
+            <a href="tel:+917976754356"><i class="fas fa-phone"></i> +91-7976754356</a>
+          </div>
+          <ul class="social-icons">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+          
+        </div>
+    
+        <div class="foot-view-right">
+          <div class="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+              <li><a href="#footer">Support</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="AboutUs.html">Faqs</a></li>
+              <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="foot-about">
+            <h2>About</h2>
+            <ul>
+              <li><a href="cardcategory.html">Pricing</a></li>
+              <li><a href="Services.html">Our Services</a></li>
+              <li><a href="AboutUs.html">About</a></li>
+            </ul>
+          </div>
+          <div class="features">
+            <h2>Features</h2>
+            <ul>
+              <li>Reports</li>
+              <li>Instant Refill</li>
+              <li>Latest Design</li>
+              <li>UPI Payments</li>
+              <li>Email Services</li>
+              <li>Single Click Bills</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="foot-text">
+        <p>All rights reserved. Made with love by OwnC</p>
+      </div>
+      
+      <!-- <====================================================================Footer-section=======================================================================>-->
+      <!-- <script src="script.js"></script> -->
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const categories = data.categories;
+            const categoriesList = document.getElementById('categories-list');
+
+            categories.forEach(category => {
+                const categoryLink = document.createElement('a');
+                const categoryImage = document.createElement('img');
+                categoryImage.src = category.image; 
+                categoryImage.classList.add('category-img');
+                categoryLink.appendChild(categoryImage);
+                categoryLink.href = `carddetails.html?category=${encodeURIComponent(category.name)}`;
+                categoryLink.classList.add('category-link');
+                categoriesList.appendChild(categoryLink);
+            });
+        })
+        .catch(error => console.error('Error fetching menu data:', error));
+});
+
+
+    </script>
+</body>
+<style>
+    /* #categories-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .category-img{
+        height: 200px;
+        width: 330px;
+        margin: 20px;
+        border: 2px solid black;
+    } */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    #categories-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 80px;
+        
+    }
+
+    .category-img {
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .category-img:hover {
+        transform: scale(1.05);
+    }
+
+    .category-link {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+</html>

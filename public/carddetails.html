@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Details</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=7976754356" target="_blank" class="whatsapp-icon">
+        <img src="icons/whatsapp.png" alt="WhatsApp">
+      </a>
+     <!-- <====================================================================Navigation-Bar=======================================================================>-->
+
+     <div class="navbar">
+        <a href="logos/logoneon.png" class="navbar-logo">NeonGifts</a>
+        <div class="navbar-links" id="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="cardcategory.html">Pricing</a>
+        </div>
+        <div class="navbar-right" id="navbar-right">
+            <a href="samplelogin.html">Login</a>
+            <a href="sampleregister.html">Register</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+      <!-- <====================================================================Navigation-Bar=======================================================================>-->
+
+    <div class="container-view">
+        <div class="top-img-view">
+            <img class="top-img" src="images/Banner.jpeg" alt="Search Icon" />
+          </div>
+          <div class="heading-view">
+            <div id="heading-text"></div>
+          </div>
+          <div class="detail-view">
+            <ul>
+                <li>GiftCard Value</li>
+                <li>CashBack</li>
+                <li>Effectie Price</li>
+                <li>Validity</li>
+            </ul>
+          </div>
+        <div id="category-details"></div>
+    </div>
+<!-- <====================================================================Footer-section=======================================================================>-->
+<footer class="footer" id="footer">
+    <div class="foot-view-left">
+      <img src="logos/logoneon.png" alt="" class="" id="logo1">
+      <p>NeonGifts is a software specially developed for online gift card buying and selling services for different platforms in Rajasthan, Punjab, Haryana and other states.</p>
+
+      <div class="mail">
+        <!-- <img src="icons/mail.png" alt="" class="contact-icon"> -->
+        <a href="mailto:shubhamsaharan04@gmail.com"><i class="fas fa-envelope"></i> shubhamsaharan04@gmail.com</a>
+      </div>
+
+      <div class="mobile">
+        <!-- <img src="icons/call.png" alt="" class="contact-icon"> -->
+        <a href="tel:+917976754356"><i class="fas fa-phone"></i> +91-7976754356</a>
+      </div>
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+      
+    </div>
+
+    <div class="foot-view-right">
+      <div class="useful-links">
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="#footer">Support</a></li>
+          <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="AboutUs.html">Faqs</a></li>
+          <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="foot-about">
+        <h2>About</h2>
+        <ul>
+          <li><a href="cardcategory.html">Pricing</a></li>
+          <li><a href="Services.html">Our Services</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+        </ul>
+      </div>
+      <div class="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Reports</li>
+          <li>Instant Refill</li>
+          <li>Latest Design</li>
+          <li>UPI Payments</li>
+          <li>Email Services</li>
+          <li>Single Click Bills</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="foot-text">
+    <p>All rights reserved. Made with love by OwnC</p>
+  </div>
+  
+  <!-- <====================================================================Footer-section=======================================================================>-->
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryName = urlParams.get('category');
+
+    if (categoryName) {
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const category = data.categories.find(cat => cat.name === categoryName);
+                if (category) {
+                    const headingText = document.getElementById('heading-text');
+                    const heading = document.createElement('h1');
+                    heading.textContent = category.name;
+                    headingText.appendChild(heading);
+
+                    const categoryDetailsDiv = document.getElementById('category-details');
+
+                    category.subcategories.forEach(subcategory => {
+                        const subcategoryList = document.createElement('ul');
+
+                        const listItem1 = document.createElement('li');
+                        listItem1.textContent = `${subcategory.value}`;
+                        subcategoryList.appendChild(listItem1);
+
+                        const listItem2 = document.createElement('li');
+                        listItem2.textContent = `${subcategory.cashback}`;
+                        subcategoryList.appendChild(listItem2);
+
+                        const listItem3 = document.createElement('li');
+                        listItem3.textContent = `${subcategory.Eprice}`;
+                        subcategoryList.appendChild(listItem3);
+
+                        const listItem4 = document.createElement('li');
+                        listItem4.textContent = `${subcategory.validity}`;
+                        subcategoryList.appendChild(listItem4);
+
+                        categoryDetailsDiv.appendChild(subcategoryList);
+                    });
+                } else {
+                    console.error('Category not found');
+                }
+            })
+            .catch(error => console.error('Error fetching category data:', error));
+    } else {
+        console.error('No category specified in URL');
+    }
+});
+
+
+    </script>
+</body>
+<style>
+    .top-img{
+        width: 100%;
+    }
+    .heading-view{
+        justify-content: center;
+        display: flex;
+    }
+    #heading-text{
+        font-size: 25px;
+    }
+    .detail-view{
+        width: 92%;
+        margin: 20px auto 0 auto ;
+        background-color: rgb(231, 229, 229);
+        height: 60px;
+    }
+    .detail-view ul{
+        display: flex;
+        flex-direction: row;
+        gap: 240px;
+        font-size: 28px;
+        list-style-type: none;
+        padding-top: 14px;
+    }
+    #category-details{
+        width: 87%;
+        margin: 20px auto 0 auto ;
+    }
+    #category-details ul{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        gap: 280px;
+        font-size: 20px;
+        list-style-type: none;
+        height: 60px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .category-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1344px) {
+    #heading-text{
+        font-size: 25px;
+    }
+    .detail-view{
+        width: 92%;
+        margin: 20px auto 0 auto ;
+        background-color: rgb(231, 229, 229);
+        height: 60px;
+    }
+    .detail-view ul{
+        display: flex;
+        flex-direction: row;
+        gap: 190px;
+        font-size: 23px;
+        list-style-type: none;
+    }
+    #category-details{
+        width: 90%;
+        margin: 20px auto 0 auto ;
+    }
+    #category-details ul{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        gap: 160px;
+        font-size: 18px;
+        list-style-type: none;
+        height: 65px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #heading-text{
+        font-size: 25px;
+    }
+    .detail-view{
+        width: 92%;
+        margin: 20px auto 0 auto ;
+        background-color: rgb(231, 229, 229);
+        height: 60px;
+    }
+    .detail-view ul{
+        display: flex;
+        flex-direction: row;
+        gap: 135px;
+        font-size: 23px;
+        list-style-type: none;
+    }
+    #category-details{
+        width: 90%;
+        margin: 20px auto 0 auto ;
+    }
+    #category-details ul{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        gap: 160px;
+        font-size: 18px;
+        list-style-type: none;
+        height: 65px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #heading-text{
+        font-size: 25px;
+    }
+    .detail-view{
+        width: 92%;
+        margin: 20px auto 0 auto ;
+        background-color: rgb(231, 229, 229);
+        height: 60px;
+    }
+    .detail-view ul{
+        display: flex;
+        flex-direction: row;
+        gap: 88px;
+        font-size: 19px;
+        list-style-type: none;
+    }
+    #category-details{
+        width: 87%;
+        margin: 20px auto 0 auto ;
+    }
+    #category-details ul{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        gap: 125px;
+        font-size: 15px;
+        list-style-type: none;
+        height: 60px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+</style>
+</html>
