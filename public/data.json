@@ -290,7 +290,7 @@
       },
       {
         "name": "Swiggy",
-        "image": "logos/swiggy-logo.png",
+        "image": "logos/Swiggy-Logo.png",
         "subcategories": [
             {
                 "value": "100",
@@ -356,7 +356,7 @@
     },    
     {
       "name": "Zomato",
-      "image": "logos/zomato-logo.png",
+      "image": "logos/Zomato-Logo.png",
       "subcategories": [
           {
               "value": "100",
@@ -494,7 +494,7 @@
 },
 {
   "name": "Bata",
-  "image": "logos/Bata-logo.jpg",
+  "image": "logos/Bata-Logo.jpg",
   "subcategories": [
       {
           "value": "100",
@@ -1190,7 +1190,7 @@
     },
     {
       "name": "Woodland",
-      "image": "logos/Woodland-logo.jpg",
+      "image": "logos/Woodland-Logo.jpg",
       "subcategories": [
           {
               "value": "100",
@@ -1268,7 +1268,7 @@
   },
   {
     "name": "Yatra",
-    "image": "logos/yatra-logo.jpg",
+    "image": "logos/Yatra-logo.jpg",
     "subcategories": [
         {
             "value": "100",
