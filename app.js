@@ -20,19 +20,19 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
-app.get('/Services.html', (req, res) => {
+app.get('/Services', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/Services.html'));
 });
 
-app.get('/ContactUs.html', (req, res) => {
+app.get('/ContactUs', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/ContactUs.html'));
 });
 
-app.get('/AboutUs.html', (req, res) => {
+app.get('/AboutUs', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/AboutUs.html'));
 });
 
-app.get('/cardcategory.html', (req, res) => {
+app.get('/CardCategory.', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/cardcategory.html'));
 });
 
