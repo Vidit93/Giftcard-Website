@@ -653,4 +653,12 @@ html{
     padding: 10px;
   }
 
+  @media screen and (max-width: 770px){
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+
   /*  */

@@ -51,27 +51,37 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Array of image URLs for the slider
 const images = [
-  "images/image1.jpg",
-  "images/image2.webp",
-  "images/image3.webp",
-  "images/image4.webp",
+  // "images/image2.jpg",
+  "images/image3.jpg",
   "images/image5.jpg"
 ];
 
-
-// Function to change the background image of the slider
-function changeImage() {
-  const index = Math.floor(Math.random() * images.length); // Get a random index from the images array
-  const imageUrl = images[index]; // Get the image URL at the random index
-  const sliderImage = document.getElementById("slider-image"); // Get the slider image element
-  sliderImage.style.backgroundImage = `url(${imageUrl})`; // Set the background image
+// Preload images
+function preloadImages() {
+  for (let i = 0; i < images.length; i++) {
+    const img = new Image();
+    img.src = images[i];
+  }
 }
 
-// Change the image every 5 seconds (5000 milliseconds)
-setInterval(changeImage, 3000);
+// Function to change the background image of the slider
+let currentIndex = 0; // Variable to keep track of the current index
 
+function changeImage() {
+  const imageUrl = images[currentIndex]; // Get the image URL at the current index
+  const sliderImage = document.getElementById("slider-image"); // Get the slider image element
+  sliderImage.style.backgroundImage = `url(${imageUrl})`; // Set the background image
+
+  // Increment the index for the next image
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Preload images before starting the slideshow
+preloadImages();
+
+// Change the image every 5 seconds (5000 milliseconds)
+setInterval(changeImage, 5000);
 // Function to count numbers
 function countNumbers() {
   const counters = document.querySelectorAll('.counter-value');
@@ -105,7 +115,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Function to check if an element is in the viewport
+
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -115,3 +125,44 @@ function isInViewport(element) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var offerCardContainer = document.getElementById("offer-card"); 
+
+  offerCardContainer.addEventListener("click", function(event) {
+      var clickedCard = event.target.closest(".offer");
+      if (clickedCard) {
+          var target = clickedCard.getAttribute("data-target");
+          
+          if (target.startsWith("#")) {
+              document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          } else {
+              window.location.href = target;
+          }
+      }
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  var service = document.getElementById("ourservice");
+
+  service.addEventListener("click", function(event) {
+    window.location.href = "Services.html";
+    
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  var service = document.getElementById("ourservice1");
+
+  service.addEventListener("click", function(event) {
+    window.location.href = "Services.html";
+    
+  });
+});
+document.addEventListener("DOMContentLoaded", function() {
+  var service = document.getElementById("ourservice2");
+
+  service.addEventListener("click", function(event) {
+    window.location.href = "Services.html";
+    
+  });
+});

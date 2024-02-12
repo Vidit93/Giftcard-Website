@@ -37,7 +37,6 @@ app.get('/cardcategory.html', (req, res) => {
 });
 
 // Route to handle form submissions
-// Route to handle form submissions
 app.post('/submit-form', async (req, res) => {
     const formData = req.body;
 

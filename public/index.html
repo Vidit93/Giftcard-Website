@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeonGifts</title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
 <body>
-  <a href="https://api.whatsapp.com/send?phone=7976754356" target="_blank" class="whatsapp-icon">
+  <a href="https://api.whatsapp.com/send?phone=9587071171" target="_blank" class="whatsapp-icon">
     <img src="icons/whatsapp.png" alt="WhatsApp">
   </a>
   
     <div class="navbar">
-        <a href="logos/logoneon.png" class="navbar-logo">NeonGifts</a>
+        <a href="index.html" class="navbar-logo">NeonGifts</a>
         <div class="navbar-links" id="navbar-links">
             <a href="index.html">Home</a>
             <a href="Services.html">Services</a>
@@ -29,7 +28,6 @@
             <a href="samplelogin.html">Login</a>
             <a href="sampleregister.html">Register</a>
         </div>
-        <!-- <div class="menu-icon" onclick="toggleMenu()">☰</div> -->
         <div class="menu-icon" id="menuIcon">Menu</div>
         
     </div>
@@ -38,18 +36,18 @@
         <div class="slider-image" id="slider-image"></div>
     </div>
 
-    <div class="offer-card">
-      <div class="offer">
+    <div class="offer-card" id="offer-card">
+      <div class="offer" data-target="cardcategory.html">
           <i class="fas fa-gift fa-3x"></i>
-          <a href="cardcategory.html"><h3>Buy Gift Cards</h3></a>
+          <h3>Buy Gift Cards</h3>
       </div>
-      <div class="offer">
+      <div class="offer" data-target="#get-in-touch">
           <i class="fas fa-building fa-3x"></i>
-          <a href="#get-in-touch"><h3>Corporate Gift Card</h3></a>
+          <h3>Corporate Gift Card</h3>
       </div>
-      <div class="offer">
+      <div class="offer" data-target="#get-in-touch">
           <i class="fas fa-money-bill-wave fa-3x"></i>
-          <a href="#get-in-touch"><h3>Sell Gift Card</h3></a>
+          <h3>Sell Gift Card</h3>
       </div>
   </div>
   
@@ -61,34 +59,34 @@
       </div>
       <div class="services-list">
         <div class="service">
-          <i class="fas fa-user-circle fa-3x"></i> <!-- Example of a Font Awesome 3D icon with larger size -->
+          <i class="fas fa-user-circle fa-3x"></i>
           <h3>Customizable Gift Cards</h3>
           <ul>
             <li>Personalized designs</li>
             <li>Custom messages</li>
             <li>Flexible denominations</li>
           </ul>
-          <button>Explore</button>
+          <button onclick="ourservice()" id="ourservice">Explore</button>
         </div>
         <div class="service">
-          <i class="fab fa-amazon-pay fa-3x"></i> <!-- Example of another Font Awesome 3D icon with larger size -->
+          <i class="fab fa-amazon-pay fa-3x"></i>
           <h3>E-Gift Cards</h3>
           <ul>
             <li>Instant delivery via email</li>
             <li>Perfect for last-minute gifts</li>
             <li>Long-distance gifting</li>
           </ul>
-          <button>Explore</button>
+          <button onclick="ourservice()" id="ourservice1">Explore</button>
         </div>
         <div class="service">
-          <i class="fas fa-briefcase fa-3x"></i> <!-- Example of a Font Awesome solid icon with larger size -->
+          <i class="fas fa-briefcase fa-3x"></i>
           <h3>Corporate Gifting Solutions</h3>
           <ul>
             <li>Bulk gift card purchases</li>
             <li>Employee incentives</li>
             <li>Client appreciation</li>
           </ul>
-          <button>Explore</button>
+          <button onclick="ourservice()" id="ourservice2">Explore</button>
         </div>
       </div>
     </section>
@@ -155,7 +153,6 @@
       <section class="get-in-touch" id="get-in-touch">
         <h1>Get in Touch</h1>
         <p>Have any questions? Drop us a message and we'll get back to you as soon as possible.</p>
-        <!-- <h2>Contact Us</h2> -->
         <form id="contact-form" action="/submit-form" method="POST">
           <div class="form-group">
             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -193,29 +190,6 @@
         </div>
       </div>
       
-      
-
-    <!-- Gift Card Section -->
-<!-- <section class="gift-card-section">
-    <h2>Buy a Gift Card</h2>
-    <div class="gift-card-options">
-      <div class="gift-card-option">
-        <h3>Option 1</h3>
-        <p>Description of Option 1</p>
-        <button>Buy Now</button>
-      </div>
-      <div class="gift-card-option">
-        <h3>Option 2</h3>
-        <p>Description of Option 2</p>
-        <button>Buy Now</button>
-      </div>
-      <div class="gift-card-option">
-        <h3>Option 3</h3>
-        <p>Description of Option 3</p>
-        <button>Buy Now</button>
-      </div>
-    </div>
-  </section> -->
 
   <footer class="footer" id="footer">
     <div class="foot-view-left">
@@ -223,13 +197,11 @@
       <p>NeonGifts is a software specially developed for online gift card buying and selling services for different platforms in Rajasthan, Punjab, Haryana and other states.</p>
 
       <div class="mail">
-        <!-- <img src="icons/mail.png" alt="" class="contact-icon"> -->
-        <a href="mailto:shubhamsaharan04@gmail.com"><i class="fas fa-envelope"></i> shubhamsaharan04@gmail.com</a>
+        <a href="mailto:info@neongifts.in"><i class="fas fa-envelope"></i>info@neongifts.in</a>
       </div>
 
       <div class="mobile">
-        <!-- <img src="icons/call.png" alt="" class="contact-icon"> -->
-        <a href="tel:+917976754356"><i class="fas fa-phone"></i> +91-7976754356</a>
+        <a href="tel:+91 95870 71171"><i class="fas fa-phone"></i> +91 95870 71171</a>
       </div>
       <ul class="social-icons">
         <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a></li>
@@ -271,11 +243,12 @@
     </div>
   </footer>
   <div class="foot-text">
-    <p>All rights reserved. Made with love by OwnC</p>
+    <p>&copy; All rights reserved. Made with love by OwnC</p>
   </div>
   
 
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 
 </body>
 
