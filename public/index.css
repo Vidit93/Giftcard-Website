@@ -502,6 +502,16 @@ button:hover {
   width: 20px;
 }
 
+.address {
+  margin: 20px;
+  color: #273d8b;
+}
+
+.address a{
+  color: #273d8b;
+  text-decoration: none;
+}
+
 .mail {
   margin: 20px 20px;
 }
